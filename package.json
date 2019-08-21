@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-cucumber",
+  "version": "1.0.0",
+  "description": "nodejs-cucumber",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./node_modules/.bin/wdio",
+    "selenium": "selenium-standalone install && selenium-standalone start",
+    "conf": "./node_modules/.bin/wdio wdio.conf.js",
+    "test": "npm run conf"
+  },
+  "author": "Amarnath Kolla",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "pngjs": "^3.3.3",
+    "wdio-cucumber-reporter": "0.0.2",
+    "wdio-html-format-reporter": "^0.2.9",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.5",
+    "webdriverio": "^4.13.2"
+  },
+  "devDependencies": {
+    "wdio-cucumber-framework": "^2.2.7"
+  }
+}
